@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "_id": "1",
       "name": "Product 1",
       "image": "https://static-01.daraz.com.bd/p/716ed67243203d728ab8b0d7c66eb7e1.jpg",
       "category": "shoes",
@@ -10,6 +11,7 @@
       "year": "2020"
     },
     {
+      "_id": "2",
       "name": "Product 2",
       "image": "https://cdn.shopify.com/s/files/1/0245/1138/1585/products/22BSH47148_2_600x.jpg?v=1647864298",
       "category": "shoes",
@@ -19,6 +21,7 @@
       "year": "2020"
     },
     {
+      "_id": "3",
       "name": "Product 3",
       "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/d/x/3/-original-imagg6reus2zjth6.jpeg?q=70",
       "category": "shoes",
@@ -28,6 +31,7 @@
       "year": "2020"
     },
     {
+      "_id": "4",
       "name": "Product 4",
       "image": "https://cdn-images.farfetch-contents.com/17/91/59/10/17915910_40073318_600.jpg",
       "category": "shoes",
@@ -37,6 +41,7 @@
       "year": "2020"
     },
     {
+      "_id": "5",
       "name": "Product 5",
       "image": "https://static-01.daraz.com.bd/p/71d448368ec06fe1466d336d4c9379a9.jpg",
       "category": "shoes",

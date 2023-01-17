@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from '../ProductCard';
+import ProductCard from '../../shared/ProductCard';
 
 const Shop = () => {
     const [products, setProducts] = useState<any[]>([])
