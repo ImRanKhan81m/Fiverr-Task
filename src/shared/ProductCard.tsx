@@ -3,6 +3,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import DeleteModal from "./DeleteModal";
+import DetailsModal from "./DetailsModal";
 
 
 interface IMyProps { product: object, }
@@ -61,8 +62,7 @@ const ProductCard: React.FC<IMyProps> = ({ product }) => {
         <h1 className=" font-semibold">{name}</h1>
         <div className="flex justify-between items-center gap-2 mt-4 w-full">
           <div className="w-[80%]">
-            <button className="bg-primary text-white  btn-sm rounded-md  flex justify-center items-center duration-100 border-none hover:bg-success hover:shadow w-full " >Details
-            </button>
+           <DetailsModal/>
           </div>
           <div className="flex items-center justify-center w-[20%]">
             <DeleteModal id={_id}/>
