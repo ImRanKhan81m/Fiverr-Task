@@ -1,0 +1,133 @@
+[{
+  "name": "Design-shirt",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://static-01.daraz.com.bd/p/716ed67243203d728ab8b0d7c66eb7e1.jpg"
+  ],
+  "quantity": 20,
+  "price": 450,
+  "salePrice": 450,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Polo-shirt",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://cdn.shopify.com/s/files/1/0245/1138/1585/products/22BSH47148_2_600x.jpg?v=1647864298"
+  ],
+  "quantity": 20,
+  "price": 450,
+  "salePrice": 450,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Shoe",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/d/x/3/-original-imagg6reus2zjth6.jpeg?q=70"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Leather Belt",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://cdn-images.farfetch-contents.com/17/91/59/10/17915910_40073318_600.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Wallet",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://static-01.daraz.com.bd/p/71d448368ec06fe1466d336d4c9379a9.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Coat Men",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://4.imimg.com/data4/SP/JF/MY-25044844/mens-coat-2-500x500.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Men wrist watch",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://static-01.daraz.com.bd/p/98dfe910ec3daf911b822a1b5dd66426.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "T-Shirt",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://images.prismic.io/rushordertees-web/0d4bbbe2-2678-4f38-9c7a-e7797be75ba0_Crewneck+Sweatshirts.jpg?auto=compress%2Cformat&rect=0%2C0%2C1600%2C1800&w=800"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Sunglass",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://static-01.daraz.com.bd/p/mdc/9bc6d00cb8b2bdc4703a13594485770c.png"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Ring men",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://i.etsystatic.com/18181116/r/il/1ecef4/2921367936/il_fullxfull.2921367936_plrm.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Winter Clothes",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://www.realmenrealstyle.com/wp-content/uploads/2020/10/Mens-Winter-Style-Guide.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+},{
+  "name": "Jeans Pant",
+  "description": "Best Quality shirt",
+  "imageURLs": [
+    "https://static-01.daraz.com.bd/p/3d77f6eb69bff77d34c21fb509e3fdb8.jpg"
+  ],
+  "quantity": 20,
+  "price": 4250,
+  "salePrice": 4150,
+  "brand": "oneFashion",
+  "category": "shirt"
+}]
