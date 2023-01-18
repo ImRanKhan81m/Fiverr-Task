@@ -54,7 +54,7 @@ const Shop = () => {
                                 }
                             </div>
 
-                            <div>
+                            {/* <div>
                                 <h1 className='font-semibold mt-5'>Price</h1>
                                 <div className='mt-2'>
                                     <input type="range" min="0" max="100" className="range  range-xs range-primary" step="25" />
@@ -66,7 +66,7 @@ const Shop = () => {
                                         <span>100K+</span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className='text-sm grid mt-5 '>
                                 <h1 className='font-semibold mb-2'>Brand</h1>
@@ -76,6 +76,21 @@ const Shop = () => {
                                             <label className="label cursor-pointer flex justify-start gap-3 py-1">
                                                 <input type="checkbox" className="checkbox h-4 w-4 rounded" />
                                                 <span className="label-text">{item?.brand}</span>
+                                            </label>
+                                        </div>
+                                    )
+                                    )
+                                }
+                            </div>
+
+                            <div className='text-sm grid mt-5 '>
+                                <h1 className='font-semibold mb-2 '>Year</h1>
+                                {
+                                    products?.map((item) => (
+                                        <div key={item?._id} className="form-control">
+                                            <label className="label cursor-pointer flex justify-start gap-3 py-1">
+                                                <input type="checkbox" className="checkbox h-4 w-4 rounded" />
+                                                <span className="label-text">{item?.year}</span>
                                             </label>
                                         </div>
                                     )

@@ -4,9 +4,7 @@ import React from 'react';
 const DetailsModal = () => {
     return (
         <div>
-            {/* The button to open modal */}
-           
-            <label  htmlFor="my-modal-5" className="bg-primary text-white  btn-sm rounded-md  flex justify-center items-center duration-100 border-none hover:bg-success hover:shadow w-full " >Details
+            <label  htmlFor="my-modal-5" className="bg-primary text-white  btn-sm rounded-md  flex justify-center items-center duration-100 border-none hover:bg-success hover:shadow w-full cursor-pointer" >Details
             </label>
 
 
