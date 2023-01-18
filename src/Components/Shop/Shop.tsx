@@ -3,6 +3,9 @@ import { dataContext } from '../../App';
 import ProductCard from '../ProductCard';
 
 const Shop = () => {
+    const [selectedBrand, setSelectedBrand] = useState<string[]>([]);
+    const [selectedYear, setSelectedYear] = useState<string[]>([]);
+    const [selectedCategory, setSelectedCategory] = useState<string[]>([]);
     const [products, setProducts] = useState<any[]>([])
     const allDataContext = useContext(dataContext);
 
@@ -18,8 +21,63 @@ const Shop = () => {
     // filter products by searchValue and set to setProducts
     const filteredProducts = products.filter((p) => p.name.toLowerCase().includes(searchValue.toLowerCase()));
     
-        
+    // selectedBrand and selectedYear
+    const handleSelectedBrand = (brand: string) => {
+        setSelectedBrand((prev) => {
+            if (prev.includes(brand)) {
+                return prev.filter((b) => b !== brand);
+            } else {
+                return [...prev, brand];
+            }
+        });
+    };
 
+    const handleSelectedYear = (year: string) => {
+        setSelectedYear((prev) => {
+            if (prev.includes(year)) {
+                return prev.filter((y) => y !== year);
+            } else {
+                return [...prev, year];
+            }
+        });
+    };
+
+    const handleSelectedCategory = (category: string) => {
+        setSelectedCategory((prev) => {
+            if (prev.includes(category)) {
+                return prev.filter((c) => c !== category);
+            } else {
+                return [...prev, category];
+            }
+        });
+    };
+
+    const filteredProductsByBrandYearAndCategory = filteredProducts.filter((p) => {
+        if (selectedBrand.length === 0 && selectedYear.length === 0 && selectedCategory.length === 0) {
+            return true;
+        } else if (selectedBrand.length === 0 && selectedYear.length === 0 && selectedCategory.length > 0) {
+            return selectedCategory.includes(p.category);
+        } else if (selectedBrand.length === 0 && selectedYear.length > 0 && selectedCategory.length === 0) {
+            return selectedYear.includes(p.year);
+        } else if (selectedBrand.length === 0 && selectedYear.length > 0 && selectedCategory.length > 0) {
+            return selectedYear.includes(p.year) && selectedCategory.includes(p.category);
+        } else if (selectedBrand.length > 0 && selectedYear.length === 0 && selectedCategory.length === 0) {
+            return selectedBrand.includes(p.brand);
+        } else if (selectedBrand.length > 0 && selectedYear.length === 0 && selectedCategory.length > 0) {
+            return selectedBrand.includes(p.brand) && selectedCategory.includes(p.category);
+        } else if (selectedBrand.length > 0 && selectedYear.length > 0 && selectedCategory.length === 0) {
+            return selectedBrand.includes(p.brand) && selectedYear.includes(p.year);
+        } else {
+            return selectedBrand.includes(p.brand) && selectedYear.includes(p.year) && selectedCategory.includes(p.category);
+        }
+    });
+
+    // clear all filters
+    const clearAllFilters = () => {
+        setSelectedBrand([]);
+        setSelectedYear([]);
+        setSelectedCategory([]);
+    };
 
     // get Categories without duplicates
     const categorySet = new Set(products.map((p) => p.category));
@@ -33,6 +91,7 @@ const Shop = () => {
     const yearSet = new Set(products.map((p) => p.year));
     const years = Array.from(yearSet).sort();
 
+    // console.log(selectedBrand, selectedYear);
     return (
         <div className='pb-14'>
             <div className='mid-container'>
@@ -67,7 +126,7 @@ const Shop = () => {
                                     categories?.map((item) => (
                                         <div key={item?._id} className="form-control">
                                             <label className="label cursor-pointer flex justify-start gap-3 py-1">
-                                                <input type="checkbox" className="checkbox h-4 w-4 rounded" />
+                                                <input type="checkbox" onChange={() => handleSelectedCategory(item)} className="checkbox h-4 w-4 rounded" />
                                                 <span className="label-text">{item}</span>
                                             </label>
                                         </div>
@@ -82,7 +141,7 @@ const Shop = () => {
                                     brands?.map((item) => (
                                         <div key={item?._id} className="form-control">
                                             <label className="label cursor-pointer flex justify-start gap-3 py-1">
-                                                <input type="checkbox" className="checkbox h-4 w-4 rounded" />
+                                                <input type="checkbox" onChange={() => handleSelectedBrand(item)} className="checkbox h-4 w-4 rounded" />
                                                 <span className="label-text">{item}</span>
                                             </label>
                                         </div>
@@ -97,7 +156,7 @@ const Shop = () => {
                                     years?.map((item) => (
                                         <div key={item?._id} className="form-control">
                                             <label className="label cursor-pointer flex justify-start gap-3 py-1">
-                                                <input type="checkbox" className="checkbox h-4 w-4 rounded" />
+                                                <input type="checkbox" onChange={() => handleSelectedYear(item)} className="checkbox h-4 w-4 rounded" />
                                                 <span className="label-text">{item}</span>
                                             </label>
                                         </div>
@@ -108,7 +167,7 @@ const Shop = () => {
                         </div>
                         <div className='w-[80%]'>
                             {
-                                filteredProducts?.length !== 0 ? (
+                                filteredProducts?.length !== 0 && !filteredProductsByBrandYearAndCategory ? (
                                     <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4">
                                 
                                         {
@@ -123,7 +182,7 @@ const Shop = () => {
                                     <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-1 gap-4">
                                 
                                         {
-                                            products?.map((item) => (
+                                            filteredProductsByBrandYearAndCategory?.map((item) => (
                                                 <ProductCard key={item?._id} product={item} />
                                             )
                                             )
