@@ -74,7 +74,7 @@ const ProductCard: React.FC<IMyProps> = ({ product }) => {
             {
               openDeleteModal && (
 
-                <DeleteModal _id={_id} setOpenDeleteModal={setOpenDeleteModal} />
+                <DeleteModal id={_id} setOpenDeleteModal={setOpenDeleteModal} />
               )
           }
             {/* <div>

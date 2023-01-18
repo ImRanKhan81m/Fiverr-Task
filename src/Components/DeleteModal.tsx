@@ -2,20 +2,32 @@ import axios from 'axios';
 import React from 'react';
 import { ImCross } from 'react-icons/im';
 
-interface IMyProps { _id: object, setOpenDeleteModal: any, }
+interface IMyProps { id: object, setOpenDeleteModal: any, }
 
-const DeleteModal: React.FC<IMyProps> = ({ _id, setOpenDeleteModal }) => {
+const DeleteModal: React.FC<IMyProps> = ({ id, setOpenDeleteModal }) => {
 
 
     // delete product from database by axios request
-    const handleDelete = async (_id:any ) => {
-      
-        fetch(`http://localhost:9000/products/${_id}`, {
-            method: 'DELETE',
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
+    const handleDelete = async (id: any) => {
+
+        // fetch("http://localhost:9000/products/" + id, {
+        //     method: 'DELETE',
+        // })
+        //     .then(res => res.json())
+        //     .then(data => {
+        //         console.log(data)
+        //         setOpenDeleteModal(false);
+        //     }
+        //     )
+
+        await axios
+            .delete(`http://localhost:9000/products/${id}`, {
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(res => {
+                console.log(res.data)
                 setOpenDeleteModal(false);
             }
             )
@@ -31,7 +43,7 @@ const DeleteModal: React.FC<IMyProps> = ({ _id, setOpenDeleteModal }) => {
                 <div>
                     <h3 className="text-lg font-bold text-center">Are you sure you want to delete this product?</h3>
                     <div className='flex justify-center items-center gap-3 mt-5'>
-                        <button onClick={() => handleDelete(_id)} className='btn-error rounded-md btn-sm font-bold text-white'>Yes</button>
+                        <button onClick={() => handleDelete(id)} className='btn-error rounded-md btn-sm font-bold text-white'>Yes</button>
                         <label onClick={() => setOpenDeleteModal(false)} className='btn btn-success font-bold text-white rounded-md btn-sm'>No</label>
 
                     </div>

@@ -19,13 +19,13 @@ const Shop = () => {
     const { searchValue } = allDataContext;
     
     // filter products by searchValue and set to setProducts
-    const filteredProducts = products.filter((p) => p.name.toLowerCase().includes(searchValue.toLowerCase()));
+    const filteredProducts = products?.filter((p) => p.name.toLowerCase().includes(searchValue.toLowerCase()));
     
     // selectedBrand and selectedYear
     const handleSelectedBrand = (brand: string) => {
         setSelectedBrand((prev) => {
             if (prev.includes(brand)) {
-                return prev.filter((b) => b !== brand);
+                return prev?.filter((b) => b !== brand);
             } else {
                 return [...prev, brand];
             }
@@ -35,7 +35,7 @@ const Shop = () => {
     const handleSelectedYear = (year: string) => {
         setSelectedYear((prev) => {
             if (prev.includes(year)) {
-                return prev.filter((y) => y !== year);
+                return prev?.filter((y) => y !== year);
             } else {
                 return [...prev, year];
             }
@@ -44,15 +44,15 @@ const Shop = () => {
 
     const handleSelectedCategory = (category: string) => {
         setSelectedCategory((prev) => {
-            if (prev.includes(category)) {
-                return prev.filter((c) => c !== category);
+            if (prev?.includes(category)) {
+                return prev?.filter((c) => c !== category);
             } else {
                 return [...prev, category];
             }
         });
     };
 
-    const filteredProductsByBrandYearAndCategory = filteredProducts.filter((p) => {
+    const filteredProductsByBrandYearAndCategory = filteredProducts?.filter((p) => {
         if (selectedBrand.length === 0 && selectedYear.length === 0 && selectedCategory.length === 0) {
             return true;
         } else if (selectedBrand.length === 0 && selectedYear.length === 0 && selectedCategory.length > 0) {

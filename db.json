@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "_id": "1",
+      "name": "Design-shirt",
+      "image": "https://static-01.daraz.com.bd/p/716ed67243203d728ab8b0d7c66eb7e1.jpg",
+      "category": "Shirt",
+      "brand": "Fashion",
+      "size": "large",
+      "price": "950",
+      "year": "2020"
+    },
+    {
+      "_id": "143",
+      "name": "Polo-shirt",
+      "image": "https://cdn.shopify.com/s/files/1/0245/1138/1585/products/22BSH47148_2_600x.jpg?v=1647864298",
+      "category": "Shirt",
+      "brand": "Fashion",
+      "size": "large",
+      "price": "650",
+      "year": "2020"
+    },
+    {
+      "_id": "2",
+      "name": "Nike Shoe",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/d/x/3/-original-imagg6reus2zjth6.jpeg?q=70",
+      "category": "Shoe",
+      "brand": "Nike",
+      "size": "medium",
+      "price": "1760",
+      "year": "2021"
+    },
+    {
+      "_id": "3",
+      "name": "Wallet",
+      "image": "https://static-01.daraz.com.bd/p/71d448368ec06fe1466d336d4c9379a9.jpg",
+      "category": "Wallet",
+      "brand": "Leather",
+      "size": "medium",
+      "price": "999",
+      "year": "2021"
+    },
+    {
+      "_id": "4",
+      "name": "Man's Coat",
+      "image": "https://4.imimg.com/data4/SP/JF/MY-25044844/mens-coat-2-500x500.jpg",
+      "category": "Coat",
+      "brand": "Fashion",
+      "size": "small",
+      "price": "4500",
+      "year": "2022"
+    },
+    {
+      "_id": "5",
+      "name": "Men wrist watch",
+      "image": "https://static-01.daraz.com.bd/p/98dfe910ec3daf911b822a1b5dd66426.jpg",
+      "category": "Watch",
+      "brand": "Helio",
+      "size": "large",
+      "price": "1200",
+      "year": "2022"
+    },
+    {
+      "_id": "6",
+      "name": "T-Shirt",
+      "image": "https://images.prismic.io/rushordertees-web/0d4bbbe2-2678-4f38-9c7a-e7797be75ba0_Crewneck+Sweatshirts.jpg?auto=compress%2Cformat&rect=0%2C0%2C1600%2C1800&w=800",
+      "category": "Shirt",
+      "brand": "Fashion",
+      "size": "large",
+      "price": "1200",
+      "year": "2022"
+    },
+    {
+      "_id": "7",
+      "name": "Sunglass",
+      "image": "https://static-01.daraz.com.bd/p/mdc/9bc6d00cb8b2bdc4703a13594485770c.png",
+      "category": "Sunglass",
+      "brand": "Smart",
+      "size": "large",
+      "price": "1200",
+      "year": "2022"
+    },
+    {
+      "_id": "8",
+      "name": "Man's Ring",
+      "image": "https://i.etsystatic.com/18181116/r/il/1ecef4/2921367936/il_fullxfull.2921367936_plrm.jpg",
+      "category": "Ring",
+      "brand": "Smart",
+      "size": "large",
+      "price": "1200",
+      "year": "2022"
+    },
+    {
+      "_id": "9",
+      "name": "Winter Cloths",
+      "image": "https://www.realmenrealstyle.com/wp-content/uploads/2020/10/Mens-Winter-Style-Guide.jpg",
+      "category": "Cloths",
+      "brand": "Fashion",
+      "size": "large",
+      "price": "1200",
+      "year": "2022"
+    },
+    {
+      "_id": "10",
+      "name": "Jeans Pant",
+      "image": "https://static-01.daraz.com.bd/p/3d77f6eb69bff77d34c21fb509e3fdb8.jpg",
+      "category": "Cloths",
+      "brand": "Fashion",
+      "size": "large",
+      "price": "800",
+      "year": "2022"
+    },
+    {
+      "_id": "11",
+      "name": "Wallet",
+      "image": "https://cdn.shopify.com/s/files/1/0014/3668/0301/products/k2karakoram2Slimlinemensslimleatherwalletmoneycliprfidbrownclosed_grande.jpg?v=1650253972",
+      "category": "Wallet",
+      "brand": "Leather",
+      "size": "medium",
+      "price": "999",
+      "year": "2021"
+    }
+  ]
+}
