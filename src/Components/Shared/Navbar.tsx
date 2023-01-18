@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { dataContext } from "../../App";
 import logo from "../../Asset/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenWishlist, setIsOpenWishlist] = useState(false);
   const natigate = useNavigate();
+  const allDataContext = useContext(dataContext);
+
+  if (!allDataContext) return null;
+
+  const {setSearchValue} = allDataContext;
 
   // const [isOpen, setIsOpen] = React.useState(false);
   // use for open cart drawer
@@ -77,6 +83,7 @@ const Navbar = () => {
               <div className="form-control w-full">
                 <div className="input-group input-group-md">
                   <input
+                    onChange={(e) => { setSearchValue(e.target.value)}}
                     type="text"
                     placeholder="I am looking for...."
                     className="input input-bordered input-md block w-full h-10"

@@ -14,8 +14,7 @@ const HomePage = () => {
     return (
         <div>
             <Navbar />
-            <Shop/>
-
+            <Shop />
 
         </div>
     );

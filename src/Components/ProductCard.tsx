@@ -3,7 +3,7 @@ import { RiDeleteBin6Line } from "react-icons/ri";
 import { AiOutlineHeart } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import DeleteModal from "./DeleteModal";
-import DetailsModal from "./DetailsModal";
+import DetailsModal from "./DetailsModel";
 
 
 interface IMyProps { product: object, }
@@ -18,6 +18,8 @@ interface ProductData {
 }
 
 const ProductCard: React.FC<IMyProps> = ({ product }) => {
+  const [openDetailsModal, setOpenDetailsModal] = useState(false);
+  const [openDeleteModal, setOpenDeleteModal] = useState(false);
 
   // destructuring product
   const { _id, name, image, category, brand, price, year } = product as ProductData;
@@ -36,13 +38,6 @@ const ProductCard: React.FC<IMyProps> = ({ product }) => {
           alt=""
           className="w-full h-full object-cover "
         />
-        {/* <Image
-          src={product?.imageURLs[0]}
-          alt="product image"
-          width={300}
-          height={200}
-          className="rounded-t-md object-cover h-[200px]"
-        ></Image> */}
       </div>
 
       <label
@@ -58,15 +53,30 @@ const ProductCard: React.FC<IMyProps> = ({ product }) => {
         </div>
       </label>
 
-      <div className="px-4 pb-4 pt-2">
+      <div className="p-4">
         <h1 className=" font-semibold">{name}</h1>
-        <p className="font-semibold text-warning">{price}$</p>
         <div className="flex justify-between items-center gap-2 mt-4 w-full">
           <div className="w-[80%]">
-           <DetailsModal/>
+          <label onClick={()=> setOpenDetailsModal(!openDetailsModal)} className="bg-primary text-white  btn-sm rounded-md  flex justify-center items-center duration-100 border-none hover:bg-success hover:shadow w-full cursor-pointer" >Details
+            </label>
+
+            {
+              openDetailsModal && (
+
+                <DetailsModal product={product} setOpenDetailsModal={ setOpenDetailsModal} />
+              )
+            }
           </div>
           <div className="flex items-center justify-center w-[20%]">
-            <DeleteModal id={_id}/>
+          <label htmlFor="my-modal-6" onClick={()=> setOpenDeleteModal(!openDeleteModal)} className="bg-warning text-white btn btn-square rounded-full btn-sm flex justify-center items-center duration-100 border-none hover:bg-error hover:shadow" > <RiDeleteBin6Line size={18} />
+            </label>
+
+            {
+              openDeleteModal && (
+
+                <DeleteModal _id={_id} setOpenDeleteModal={setOpenDeleteModal} />
+              )
+          }
             {/* <div>
               <button className="bg-error text-white btn btn-sm rounded-md  flex justify-center items-center duration-100 border-none hover:bg-error hover:shadow " > <span className="flex gap-2 justify-center items-center">Delete <RiDeleteBin6Line size={18} /></span>
               </button>
