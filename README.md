@@ -7,7 +7,7 @@ E-Commerce Website is an online platform for buying and selling products or serv
 To install E-Commerce Website, you will need to have the following dependencies installed:
 
 ### git clone https://github.com/AyonJD/react-typescript
-#### cd E-CommerceWebsite
+#### cd projectName
 npm install
 
 ## Usage
