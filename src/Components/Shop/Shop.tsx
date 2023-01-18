@@ -24,7 +24,7 @@ const Shop = () => {
     const years = Array.from(yearSet).sort();
 
     return (
-        <div>
+        <div className='pb-14'>
             <div className='mid-container'>
 
                 <div className='mt-10'>
