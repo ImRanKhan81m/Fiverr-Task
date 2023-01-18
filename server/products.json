@@ -13,7 +13,7 @@
     {
       "_id": "143",
       "name": "Polo-shirt",
-      "image":"https://cdn.shopify.com/s/files/1/0245/1138/1585/products/22BSH47148_2_600x.jpg?v=1647864298",
+      "image": "https://cdn.shopify.com/s/files/1/0245/1138/1585/products/22BSH47148_2_600x.jpg?v=1647864298",
       "category": "Shirt",
       "brand": "Fashion",
       "size": "large",
@@ -33,7 +33,7 @@
     {
       "_id": "3",
       "name": "Wallet",
-      "image":"https://static-01.daraz.com.bd/p/71d448368ec06fe1466d336d4c9379a9.jpg",
+      "image": "https://static-01.daraz.com.bd/p/71d448368ec06fe1466d336d4c9379a9.jpg",
       "category": "Wallet",
       "brand": "Leather",
       "size": "medium",
@@ -113,7 +113,7 @@
     {
       "_id": "11",
       "name": "Wallet",
-      "image":"https://cdn.shopify.com/s/files/1/0014/3668/0301/products/k2karakoram2Slimlinemensslimleatherwalletmoneycliprfidbrownclosed_grande.jpg?v=1650253972",
+      "image": "https://cdn.shopify.com/s/files/1/0014/3668/0301/products/k2karakoram2Slimlinemensslimleatherwalletmoneycliprfidbrownclosed_grande.jpg?v=1650253972",
       "category": "Wallet",
       "brand": "Leather",
       "size": "medium",
