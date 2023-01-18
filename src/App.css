@@ -19,6 +19,7 @@
     align-items: center;
 }
 
+
 .popup_content {
     background-color: #fff;
     padding: 20px;
@@ -28,15 +29,33 @@
     max-height: 500px;
     overflow-y: auto;
 }
+.popup_content_delete {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    max-height: 500px;
+    overflow-y: auto;
+    
+}
 
 @media screen and (max-width: 1200px) {
     .popup_content {
         width: 90%;
     }
+    .popup_content_delete {
+        width: 55%;
+        padding: 30px;
+    }
 }
 @media screen and (max-width: 768px) {
     .popup_content {
         width: 90%;
+    }
+    .popup_content_delete {
+        width: 90%;
+        padding: 30px;
     }
 
 }

@@ -20,7 +20,7 @@ const DeleteModal: React.FC<IMyProps> = ({ _id, setOpenDeleteModal }) => {
 
     return (
             <div className='popup_wrapper'>
-            <div className="popup_content relative">
+            <div className="popup_content_delete relative">
                 <ImCross onClick={() => setOpenDeleteModal(false)} className='absolute right-0 top-0 mr-4 mt-4 h-4 w-4 cursor-pointer' />
                 <input type="checkbox" id="my-modal-6" className="modal-toggle" />
                 <div>
