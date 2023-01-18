@@ -25,7 +25,7 @@
       "name": "Nike Shoe",
       "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/d/x/3/-original-imagg6reus2zjth6.jpeg?q=70",
       "category": "Shoe",
-      "brand": "nike",
+      "brand": "Nike",
       "size": "medium",
       "price": "1760",
       "year": "2021"
@@ -81,7 +81,7 @@
       "year": "2022"
     },
     {
-      "_id": "7",
+      "_id": "8",
       "name": "Man's Ring",
       "image": "https://i.etsystatic.com/18181116/r/il/1ecef4/2921367936/il_fullxfull.2921367936_plrm.jpg",
       "category": "Ring",
@@ -91,7 +91,7 @@
       "year": "2022"
     },
     {
-      "_id": "8",
+      "_id": "9",
       "name": "Winter Cloths",
       "image": "https://www.realmenrealstyle.com/wp-content/uploads/2020/10/Mens-Winter-Style-Guide.jpg",
       "category": "Cloths",
@@ -101,7 +101,7 @@
       "year": "2022"
     },
     {
-      "_id": "8",
+      "_id": "10",
       "name": "Jeans Pant",
       "image": "https://static-01.daraz.com.bd/p/3d77f6eb69bff77d34c21fb509e3fdb8.jpg",
       "category": "Cloths",
@@ -111,7 +111,7 @@
       "year": "2022"
     },
     {
-      "_id": "9",
+      "_id": "11",
       "name": "Wallet",
       "image":"https://cdn.shopify.com/s/files/1/0014/3668/0301/products/k2karakoram2Slimlinemensslimleatherwalletmoneycliprfidbrownclosed_grande.jpg?v=1650253972",
       "category": "Wallet",

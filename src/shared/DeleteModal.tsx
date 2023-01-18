@@ -12,7 +12,7 @@ const DeleteModal: React.FC<IMyProps> = ({ id }) => {
     // destructuring product
     const { _id } = id as ProductData;
 
-    console.log(_id)
+    // console.log(_id)
 
     const handleDelete = () => {
         fetch(`http://localhost:5000/products/${_id}`, {
