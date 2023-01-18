@@ -58,8 +58,9 @@ const ProductCard: React.FC<IMyProps> = ({ product }) => {
         </div>
       </label>
 
-      <div className="p-4">
+      <div className="px-4 pb-4 pt-2">
         <h1 className=" font-semibold">{name}</h1>
+        <p className="font-semibold text-warning">{price}$</p>
         <div className="flex justify-between items-center gap-2 mt-4 w-full">
           <div className="w-[80%]">
            <DetailsModal/>
